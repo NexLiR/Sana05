@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airplane", "Airplane\Airplane.csproj", "{F6EFE5F9-B431-40DF-9A73-0F6CE45F8AEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product", "Product\Product.csproj", "{B93E95E8-054E-42E4-9148-0A83E1D9E863}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6EFE5F9-B431-40DF-9A73-0F6CE45F8AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6EFE5F9-B431-40DF-9A73-0F6CE45F8AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6EFE5F9-B431-40DF-9A73-0F6CE45F8AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6EFE5F9-B431-40DF-9A73-0F6CE45F8AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B93E95E8-054E-42E4-9148-0A83E1D9E863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93E95E8-054E-42E4-9148-0A83E1D9E863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93E95E8-054E-42E4-9148-0A83E1D9E863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93E95E8-054E-42E4-9148-0A83E1D9E863}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85352596-6F28-4000-BB79-7E1E005594F3}
+	EndGlobalSection
+EndGlobal
