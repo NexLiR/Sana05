@@ -11,9 +11,9 @@ public class MyDate
     {
         Year = 2000;
         Month = 12;
-        Day = 31;
+        Day = 30;
         Hours = 24;
-        Minutes = 60;
+        Minutes = 59;
     }
     public MyDate(short year, byte month, byte day, byte hours, byte minutes)
     {

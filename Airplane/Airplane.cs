@@ -74,7 +74,7 @@ public class Airplane
     {
         int totalTimeInMinutes = 0;
         DateTime date1 = new DateTime(startDate.GetMyDateYear(), startDate.GetMyDateMonth(), startDate.GetMyDateDay(), startDate.GetMyDateHours(), startDate.GetMyDateMinutes(), 0);
-        DateTime date2 = new DateTime(finishDate.GetMyDateYear(), finishDate.GetMyDateMonth(), finishDate.GetMyDateDay(), finishDate.GetMyDateHours(), finishDate.GetMyDateMinutes(), 0);
+        DateTime date2 = new DateTime(finishDate.GetMyDateYear(), finishDate.GetMyDateMonth(), finishDate.GetMyDateDay(), finishDate.GetMyDateHours(), finishDate.GetMyDateMinutes(), 1);
         TimeSpan difference = date2 - date1;
         totalTimeInMinutes = (int)difference.TotalMinutes;
         return totalTimeInMinutes;
@@ -82,7 +82,7 @@ public class Airplane
     public bool IsArravingToday(MyDate startDate, MyDate finishDate)
     {
         bool isArravingToday = false;
-        if (startDate.GetMyDateYear == finishDate.GetMyDateYear && startDate.GetMyDateMonth == finishDate.GetMyDateMonth && startDate.GetMyDateDay == finishDate.GetMyDateDay)
+        if (startDate.GetMyDateYear() == finishDate.GetMyDateYear() && startDate.GetMyDateMonth() == finishDate.GetMyDateMonth() && startDate.GetMyDateDay() == finishDate.GetMyDateDay())
         {
             isArravingToday = true;    
         }
