@@ -100,4 +100,16 @@ public class Product
         else throw new Exception("Weight can not be negative");
     }
 
+    public double GetPriceInUAN()
+    {
+        return Price * Cost.GetExRate();
+    }
+    public double GetTotalPriceInUAN()
+    {
+        return Price * Cost.GetExRate() * Quantity;
+    }
+    public double GetTotalWeight()
+    {
+        return Weight * Quantity;
+    }
 }
