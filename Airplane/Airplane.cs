@@ -39,11 +39,13 @@ public class Airplane
     }
     public void SetStartCity(string value)
     {
-        StartCity = value;
+        if (value.Length > 0) StartCity = value;
+        else throw new Exception("Start city name can not be empty");
     }
     public void SetFinishCity(string value)
     {
-        FinishCity = value;
+        if (value.Length > 0) FinishCity = value;
+        else throw new Exception("Finish city name can not be empty");
     }
     public void SetStartDate(MyDate value)
     {
@@ -51,7 +53,8 @@ public class Airplane
     }
     public void SetFinishDate(MyDate value)
     {
-        FinishDate = value;
+        if (GetTotalTime(StartDate, value) > 0) FinishDate = value;
+        else throw new Exception("Finish date can not be less than start date");
     }
     public string GetStartCity()
     {
@@ -74,7 +77,7 @@ public class Airplane
     {
         int totalTimeInMinutes = 0;
         DateTime date1 = new DateTime(startDate.GetMyDateYear(), startDate.GetMyDateMonth(), startDate.GetMyDateDay(), startDate.GetMyDateHours(), startDate.GetMyDateMinutes(), 0);
-        DateTime date2 = new DateTime(finishDate.GetMyDateYear(), finishDate.GetMyDateMonth(), finishDate.GetMyDateDay(), finishDate.GetMyDateHours(), finishDate.GetMyDateMinutes(), 1);
+        DateTime date2 = new DateTime(finishDate.GetMyDateYear(), finishDate.GetMyDateMonth(), finishDate.GetMyDateDay(), finishDate.GetMyDateHours(), finishDate.GetMyDateMinutes(), 0);
         TimeSpan difference = date2 - date1;
         totalTimeInMinutes = (int)difference.TotalMinutes;
         return totalTimeInMinutes;
